@@ -6,11 +6,9 @@ import { MovieList } from './components/MovieList/MovieList';
 
 export const App = () => (
   <div className="page">
-    <MovieList moviesFromServer={moviesFromServer} />
     <div className="page-content">
-      <div className="movies" />
+      <MovieList movies={moviesFromServer} />
     </div>
-
     <div className="sidebar" data-cy="Sidebar">
       Sidebar will be here
     </div>
